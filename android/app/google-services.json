@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1070382363855",
+    "project_id": "calculatrice-530c7",
+    "storage_bucket": "calculatrice-530c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070382363855:android:b892c03f3bef7b240373ba",
+        "android_client_info": {
+          "package_name": "com.example.calculator_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA4HkOe3x1wiJmmvdyzSXegi8-N3yI6Eo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

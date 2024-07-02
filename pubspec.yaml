@@ -1,0 +1,29 @@
+name: calculator_app
+description: A new Flutter project.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cloud_firestore: ^5.0.2
+  firebase_core: ^3.1.1
+  firebase_auth: ^5.1.1
+  connectivity_plus: ^6.0.3
+  battery_plus: ^6.0.1
+  shared_preferences: ^2.1.0
+  google_sign_in: ^6.0.2
+  provider: ^6.1.0
+  flutter_local_notifications: ^17.2.1
+  cupertino_icons: ^1.0.5
+  fluttertoast: ^8.0.9  # Ensure this line is added correctly
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

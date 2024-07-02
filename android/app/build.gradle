@@ -1,0 +1,56 @@
+buildscript {
+    repositories {
+        google()  // Required for the Android plugin and Firebase dependencies
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.2'  // Android Gradle plugin version
+        classpath 'com.google.gms:google-services:4.3.10'  // Google Services plugin for Firebase
+    }
+}
+
+plugins {
+    id "com.android.application"  // Android application plugin
+    id "kotlin-android"  // Kotlin plugin
+    id "dev.flutter.flutter-gradle-plugin"  // Flutter plugin
+    id "com.google.gms.google-services" version "4.3.10"  // Google Services plugin for Firebase
+}
+
+android {
+    compileSdkVersion 34  // Adjust compileSdkVersion to match your Flutter version
+    buildToolsVersion "31.0.0"  // Adjust buildToolsVersion to match your Flutter version
+
+    defaultConfig {
+        applicationId "com.example.calculator_app"  // Your application ID
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true  // Enable MultiDex if needed
+    }
+
+    buildTypes {
+        release {
+            // Configure release build settings if necessary
+            // Example: signingConfig signingConfigs.release
+        }
+    }
+}
+
+flutter {
+    source '../..'  // Path to your Flutter project directory
+}
+
+// Repository configurations for all projects
+allprojects {
+    repositories {
+        google()  // Required for the Android plugin and Firebase dependencies
+        mavenCentral()
+    }
+}
+
+// Apply Firebase BOM and dependencies
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:28.4.1')  // Firebase BOM for managing dependencies
+    implementation 'com.google.firebase:firebase-analytics-ktx'  // Example Firebase dependency (adjust as needed)
+}
